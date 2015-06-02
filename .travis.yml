@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "0.12"
+  - "0.11"
+  - "0.10"
+  - "iojs"
+  - "iojs-v1.0.4" 
+addons:
+  code_climate:
+    repo_token: 2b08e729ed4009e7b675462036c7f1253401622866ba3bbaba7e4bdc0caabb6e
+script: "npm run coverage"
+after_script:
+  - codeclimate < etc/lcov.info

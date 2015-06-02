@@ -9,7 +9,7 @@ module.exports = function formatDate(format, date) {
 
 	// default to today
 	if (!date) {
-		date = new Date()
+		date = new Date();
 	}
 
 	// ----- years

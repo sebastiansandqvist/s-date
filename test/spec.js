@@ -1,21 +1,21 @@
 // ----- dependencies
 // ---------------------------------------
-// require('blanket')({
-//     pattern: function (filename) {
-//         return !/node_modules/.test(filename);
-//     }
-// });
+require('blanket')({
+    pattern: function (filename) {
+        return !/node_modules/.test(filename);
+    }
+});
 
 var expect = require('chai').expect;
 var date = require('../index.js');
 
-const testDate = new Date(1994, 10, 7, 6, 25, 4);
-const testDate2 = new Date(2001, 0, 1, 1, 60, 30);
-const testDate3 = new Date(2013, 11, 02, 12); // noon
-const testDate4 = new Date(2050, 10, 22, 0); // midnight
-const testDate5 = new Date(2050, 10, 22, 24); // is actually the 23rd
-const testDate6 = new Date(2050, 10, 22, 16); // pm time
-const testDate7 = new Date(2001, 0, 1, 1, 1, 60); // 60 seconds
+var testDate = new Date(1994, 10, 7, 6, 25, 4);
+var testDate2 = new Date(2001, 0, 1, 1, 60, 30);
+var testDate3 = new Date(2013, 11, 02, 12); // noon
+var testDate4 = new Date(2050, 10, 22, 0); // midnight
+var testDate5 = new Date(2050, 10, 22, 24); // is actually the 23rd
+var testDate6 = new Date(2050, 10, 22, 16); // pm time
+var testDate7 = new Date(2001, 0, 1, 1, 1, 60); // 60 seconds
 
 // ----- tests
 // ---------------------------------------
