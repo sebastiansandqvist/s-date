@@ -15,7 +15,7 @@ date('{mm}/{dd}/{yyyy}', myBirthday); // '11/07/1994'
 
 ## Formatting options
 
-For January 2, 2053 4:30pm + 45 seconds
+Example: For January 2, 2053 4:30pm + 45 seconds
 
 | String template | Output example | Meaning             |
 | --------------- | -------------- | ------------------- |
@@ -41,11 +41,12 @@ For January 2, 2053 4:30pm + 45 seconds
 | `{Minutes}`     | 30             | Minutes (padded)    |
 | `{Seconds}`     | 45             | Seconds (padded)    |
 
+
 **To output the example above...**
 ```javascript
 // Date(year, month-1, date, hours, minutes, seconds)
 var someDay = new Date(2053, 0, 2, 4, 30, 45);
-date('For {Month} {d}, {yyyy} {h}:{Minutes}{ampm} + {Seconds} seconds');
+date('{Month} {d}, {yyyy} {h}:{Minutes}{ampm} + {Seconds} seconds', someDay);
 ```
 
 ## License
