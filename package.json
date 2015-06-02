@@ -1,0 +1,27 @@
+{
+  "name": "s-date",
+  "version": "0.1.0",
+  "description": "Tiny date/time formatter",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebastiansandqvist/s-date.git"
+  },
+  "keywords": [
+    "date",
+    "time",
+    "format"
+  ],
+  "author": "sebastian sandqvist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastiansandqvist/s-date/issues"
+  },
+  "homepage": "https://github.com/sebastiansandqvist/s-date"
+}

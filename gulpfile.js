@@ -16,3 +16,5 @@ gulp.task('default', ['lint'], function () {
     return gulp.src('test/*.js', { read: false})
         .pipe(mocha({ reporter: 'spec' }));
 });
+
+gulp.watch(['index.js', 'test/*.js'], ['default']);

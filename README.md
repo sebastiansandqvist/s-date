@@ -1,6 +1,4 @@
 # s-date
-## Work in progress
-
 [![NPM version](https://img.shields.io/npm/v/s-date.svg)](https://www.npmjs.com/package/s-date) ![Dependencies](https://img.shields.io/david/sebastiansandqvist/s-date.svg) [![build status](http://img.shields.io/travis/sebastiansandqvist/s-date.svg)](https://travis-ci.org/sebastiansandqvist/s-date) [![NPM license](https://img.shields.io/npm/l/s-date.svg)](https://www.npmjs.com/package/s-date)
 
 ## License
