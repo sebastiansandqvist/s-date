@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var mocha = require('gulp-mocha');
 var lint = require('gulp-jshint');
+var uglify = require('gulp-uglify');
 
 // ----- lint
 // ---------------------------------------
