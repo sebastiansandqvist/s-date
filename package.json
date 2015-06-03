@@ -1,11 +1,12 @@
 {
   "name": "s-date",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tiny date/time formatter",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
+  "files": ["index.js", "test", "README.md"],
   "scripts": {
     "test": "mocha",
     "coverage_html": "mocha --require blanket -R html-cov > etc/coverage.html",
