@@ -1,16 +1,15 @@
 {
   "name": "s-date",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Tiny date/time formatter",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
-  "files": ["index.js", "test", "README.md"],
+  "files": ["index.js", "test", "README.md", "etc/coverage.html"],
   "scripts": {
     "test": "mocha",
-    "coverage_html": "mkdir -p etc && mocha --require blanket -R html-cov > etc/coverage.html",
-    "coverage": "mkdir -p etc && mocha --require blanket --reporter mocha-lcov-reporter > etc/lcov.info"
+    "coverage": "mocha --require blanket --reporter mocha-lcov-reporter > etc/lcov.info"
   },
   "repository": {
     "type": "git",
