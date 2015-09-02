@@ -1,0 +1,6 @@
+{
+	"extends": "@seabass",
+	"rules": {
+		"complexity": [2, 13]
+	}
+}
