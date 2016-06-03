@@ -14,15 +14,15 @@ module.exports = function formatDate(format, date) {
 
 	// ----- years
 	// ---------------------------------------
-	const yyyy = date.getFullYear().toString(); // {yyyy}
-	const yy = yyyy.slice(-2); // {yy}
+	var yyyy = date.getFullYear().toString(); // {yyyy}
+	var yy = yyyy.slice(-2); // {yy}
 	
 	// ----- months
 	// ---------------------------------------
-	const monthInt = date.getMonth() + 1;
-	const m = monthInt.toString(); // {m}
-	const mm = monthInt < 10 ? `0${m}` : m; // {mm}
-	const months = [
+	var monthInt = date.getMonth() + 1;
+	var m = monthInt.toString(); // {m}
+	var mm = monthInt < 10 ? '0' + m : m; // {mm}
+	var months = [
 		'January',
 		'February',
 		'March',
@@ -37,25 +37,25 @@ module.exports = function formatDate(format, date) {
 		'December'
 	];
 
-	const month = months[date.getMonth()]; // {Month} & {Mo}
+	var month = months[date.getMonth()]; // {Month} & {Mo}
 
 
 	// ----- days
 	// ---------------------------------------
-	const day = date.getDate();
-	const dd = day < 10 ? `0${day}` : day; // {dd}
+	var day = date.getDate();
+	var dd = day < 10 ? '0' + day : day; // {dd}
 
 
 	// ----------------- suffixes -----------------
-	const daySuffixes = Object.create(null); // so for in loop works
+	var daySuffixes = Object.create(null); // so for in loop works
 	daySuffixes.st = [1, 21, 31];
 	daySuffixes.nd = [2, 22];
 	daySuffixes.rd = [3, 23];
 
 	// loop through 'st', 'nd', and 'rd' (suffixes like '1st', '2nd', etc)
 	// if suffix is not found, it is 'th' (most numbers)
-	let suffixNotFound;
-	let suffix;
+	var suffixNotFound;
+	var suffix;
 
 	for (suffix in daySuffixes) {
 		if (daySuffixes[suffix].indexOf(day) > -1) {
@@ -69,10 +69,10 @@ module.exports = function formatDate(format, date) {
 		suffix = 'th';
 	}
 
-	const dayWithSuffix = day + suffix; // {D}
+	var dayWithSuffix = day + suffix; // {D}
 	// ----------------- end suffixes -----------------
 
-	const weekdays = [
+	var weekdays = [
 		'Monday',
 		'Tuesday',
 		'Wednesday',
@@ -82,24 +82,24 @@ module.exports = function formatDate(format, date) {
 		'Sunday'
 	];
 
-	const weekday = weekdays[date.getDay()];
+	var weekday = weekdays[date.getDay()];
 
 
 	// ----- hours
 	// ---------------------------------------
-	const hours24 = date.getHours();
-	const hh24 = hours24 < 10 ? `0${hours24}` : hours24;
-	const hours = hours24 % 12 === 0 ? 12 : hours24 % 12; // {h}
-	const hh = hours < 10 ? `0${hours}` : hours;
-	const ampm = hours24 < 12 ? 'am' : 'pm'; // {ampm}
+	var hours24 = date.getHours();
+	var hh24 = hours24 < 10 ? '0' + hours24 : hours24;
+	var hours = hours24 % 12 === 0 ? 12 : hours24 % 12; // {h}
+	var hh = hours < 10 ? '0' + hours : hours;
+	var ampm = hours24 < 12 ? 'am' : 'pm'; // {ampm}
 
 	// ----- minutes, seconds
 	// ---------------------------------------
-	const min = date.getMinutes();
-	const minutes = min < 10 ? `0${min}` : min;
+	var min = date.getMinutes();
+	var minutes = min < 10 ? '0' + min : min;
 	
-	const sec = date.getSeconds();
-	const seconds = sec < 10 ? `0${sec}` : sec;
+	var sec = date.getSeconds();
+	var seconds = sec < 10 ? '0' + sec : sec;
 
 	return format
 		.replace('{yyyy}', yyyy)
