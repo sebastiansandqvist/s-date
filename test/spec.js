@@ -177,6 +177,17 @@ describe('date', function() {
 
 		});
 
+		describe('repeats', function() {
+
+			it('should parse all repeats', function() {
+
+				expect(date('{d}{d}{d}', testDate)).to.equal('777');
+				expect(date('{d} {Seconds} {d}', testDate)).to.equal('7 04 7');
+
+			});
+
+		});
+
 		describe('multi-format', function() {
 
 			it('should format correctly', function() {

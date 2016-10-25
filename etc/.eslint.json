@@ -1,6 +1,8 @@
 {
 	"extends": "@seabass",
 	"rules": {
-		"complexity": [2, 13]
+		"complexity": [2, 13],
+		"no-var": 0,
+		"prefer-template": 0
 	}
 }
