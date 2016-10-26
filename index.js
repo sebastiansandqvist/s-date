@@ -193,10 +193,10 @@ module.exports = function formatDate(format, date) {
 		'{Seconds}': seconds
 	};
 
-	const regex = /\{yyyy\}|\{yy\}|\{m\}|\{mm\}|\{Month\}|\{Mo\}|\{d\}|\{dd\}|\{ds\}|\{Weekday\}|\{Day\}|\{Dy\}|\{D\}|\{h24\}|\{hh24\}|\{h\}|\{hh\}|\{ampm\}|\{AMPM\}|\{Minutes\}|\{Seconds\}/g;
+	var regex = /\{yyyy\}|\{yy\}|\{m\}|\{mm\}|\{Month\}|\{Mo\}|\{d\}|\{dd\}|\{ds\}|\{Weekday\}|\{Day\}|\{Dy\}|\{D\}|\{h24\}|\{hh24\}|\{h\}|\{hh\}|\{ampm\}|\{AMPM\}|\{Minutes\}|\{Seconds\}/g;
 
-	return format
-		.replace(regex, function(match) {
-			return map[match](date);
-		});
+	return format.replace(regex, function(match) {
+		return map[match](date);
+	});
+
 };
