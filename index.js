@@ -138,11 +138,8 @@ function seconds(date) {
   return sec < 10 ? '0' + sec : sec;
 }
 
-/**
- * foo vbar
- * @param  {String}
- * @param  {Date?}
- * @return {String}
+/*
+  formatDate('{mm}/{dd}/{yyyy}', new Date(2001, 0, 1)) => '01/01/2001'
  */
 module.exports = function formatDate(format, date) {
 
