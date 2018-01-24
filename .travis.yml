@@ -1,22 +1,17 @@
 language: node_js
 node_js:
-  - "7.0"
-  - "6.0"
-  - "5.0"
-  - "4.0"
-  - "iojs-v3.3"
-  - "iojs-v3.0"
-  - "iojs-v2.5"
-  - "iojs-v2.0"
-  - "iojs-v1.8"
-  - "iojs-v1.0"
-  - "0.12"
-  - "0.11"
-  - "0.10"
+  - "node"
+  - "lts/*"
+  - "9"
+  - "8"
+  - "7"
+  - "6"
+  - "5"
+  - "4"
 sudo: false
 addons:
   code_climate:
     repo_token: 8504ab53595e39d833a8ea88ee9a816f6269e0ad3cee4d7ecd98256947dd3fce
 script: "npm run coverage"
 after_script:
-  - codeclimate-test-reporter < etc/lcov.info
+  - codeclimate-test-reporter < coverage/lcov.info

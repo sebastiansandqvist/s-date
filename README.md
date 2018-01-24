@@ -27,7 +27,7 @@ Example: For January 2, 2053 4:30pm + 45 seconds
 | `{Mo}`          | Jan            | month shortname     |
 | `{d}`           | 2              | date                |
 | `{ds}`          | 2nd            | date + suffix       |
-| `{dd}`          | 2              | 2-digit date        |
+| `{dd}`          | 02             | 2-digit date        |
 | `{Weekday}`     | Thursday       | day of the week     |
 | `{Day}`         | Thu            | day shortname       |
 | `{Dy}`          | Th             | day shortername     |
