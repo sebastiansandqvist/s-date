@@ -9,9 +9,4 @@ node_js:
   - "5"
   - "4"
 sudo: false
-addons:
-  code_climate:
-    repo_token: 8504ab53595e39d833a8ea88ee9a816f6269e0ad3cee4d7ecd98256947dd3fce
-script: "npm run coverage"
-after_script:
-  - codeclimate-test-reporter < coverage/lcov.info
+script: "npm test"
