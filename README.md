@@ -1,5 +1,5 @@
 # s-date
-[![NPM version](https://img.shields.io/npm/v/s-date.svg)](https://www.npmjs.com/package/s-date) ![Dependencies](https://img.shields.io/david/sebastiansandqvist/s-date.svg) [![build status](http://img.shields.io/travis/sebastiansandqvist/s-date.svg)](https://travis-ci.org/sebastiansandqvist/s-date) [![NPM license](https://img.shields.io/npm/l/s-date.svg)](https://www.npmjs.com/package/s-date) [![Test Coverage](https://codeclimate.com/github/sebastiansandqvist/s-date/badges/coverage.svg)](https://codeclimate.com/github/sebastiansandqvist/s-date/coverage)
+[![NPM version](https://img.shields.io/npm/v/s-date.svg)](https://www.npmjs.com/package/s-date) ![Dependencies](https://img.shields.io/david/sebastiansandqvist/s-date.svg) [![build status](http://img.shields.io/travis/sebastiansandqvist/s-date.svg)](https://travis-ci.org/sebastiansandqvist/s-date) [![NPM license](https://img.shields.io/npm/l/s-date.svg)](https://www.npmjs.com/package/s-date)
 
 Same general purpose as moment.js, but in ~1kb minified.
 
