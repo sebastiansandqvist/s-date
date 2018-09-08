@@ -7,8 +7,7 @@ const m = (date: Date) => (date.getMonth() + 1).toString(); // {m}
 
 const mm = (date: Date) => {
   const monthInt = date.getMonth() + 1;
-  const mth = monthInt.toString();
-  return monthInt < 10 ? '0' + mth : mth; // {mm}
+  return monthInt < 10 ? '0' + monthInt : monthInt.toString(); // {mm}
 }
 
 const month = (date: Date) => {
