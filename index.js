@@ -6,8 +6,7 @@ var yy = function (date) { return date.getFullYear().toString().slice(-2); }; //
 var m = function (date) { return (date.getMonth() + 1).toString(); }; // {m}
 var mm = function (date) {
     var monthInt = date.getMonth() + 1;
-    var mth = monthInt.toString();
-    return monthInt < 10 ? '0' + mth : mth; // {mm}
+    return monthInt < 10 ? '0' + monthInt : monthInt.toString(); // {mm}
 };
 var month = function (date) {
     var months = [
