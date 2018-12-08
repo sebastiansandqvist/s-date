@@ -1,6 +1,6 @@
 {
   "name": "s-date",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Tiny date/time formatter",
   "main": "index.js",
   "types": "index.d.ts",
