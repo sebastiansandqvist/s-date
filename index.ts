@@ -62,13 +62,13 @@ const dayWithSuffix = (date: Date) => {
 
 const weekday = (date: Date) => {
   const weekdays = [
+    'Sunday',
     'Monday',
     'Tuesday',
     'Wednesday',
     'Thursday',
     'Friday',
-    'Saturday',
-    'Sunday'
+    'Saturday'
   ];
   return weekdays[date.getDay()];
 }

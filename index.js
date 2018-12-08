@@ -54,13 +54,13 @@ var dayWithSuffix = function (date) {
 };
 var weekday = function (date) {
     var weekdays = [
+        'Sunday',
         'Monday',
         'Tuesday',
         'Wednesday',
         'Thursday',
         'Friday',
-        'Saturday',
-        'Sunday'
+        'Saturday'
     ];
     return weekdays[date.getDay()];
 };
