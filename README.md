@@ -5,6 +5,8 @@ Same general purpose as moment.js, but in ~1kb minified.
 
 This CommonJS module exports a single function that takes two parameters. The first is a format string, the second is an optional `Date`. If the date is omitted, it defaults to `new Date();`.
 
+If you don't need full customizability for your date string, you probably don't need this library. Just use [Date.toLocaleDateString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString) and [related](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString) [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString).
+
 ## Usage
 ```javascript
 var date = require('s-date');
@@ -47,4 +49,16 @@ Example: For January 2, 2053 4:30pm + 45 seconds
 // Date(year, month-1, date, hours, minutes, seconds)
 var someDay = new Date(2053, 0, 2, 4, 30, 45);
 date('{Month} {d}, {yyyy} {h}:{Minutes}{ampm} + {Seconds} seconds', someDay);
+```
+
+## Benchmarks
+Run using benchmark.js on 2.3GHz Macbook Pro
+
+```
+s-date    x 428,936 ops/sec ±2.29% (79 runs sampled)
+moment    x 271,963 ops/sec ±1.34% (85 runs sampled)
+date-fns  x 196,827 ops/sec ±1.17% (80 runs sampled)
+dayjs     x 121,425 ops/sec ±1.99% (87 runs sampled)
+luxon     x 90,782 ops/sec ±1.13% (83 runs sampled)
+Fastest is s-date
 ```
